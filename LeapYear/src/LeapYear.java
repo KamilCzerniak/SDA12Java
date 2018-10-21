@@ -5,7 +5,7 @@ public class LeapYear {
         String[] temp = new String[year.length];
 
         for (int i = 0; i < temp.length; i++) {
-            temp[i] = (year[i] % 4 == 0 && year[i] % 100 != 0) || year[i] % 400 == 0 ? "TAK" : "NIE";
+            temp[i] = (year[i] % 4 == 0 && year[i] % 100 != 0) || year[i] % 400 == 0 ? "YES" : "NO";
         }
         return String.join("\n", temp);
     }
